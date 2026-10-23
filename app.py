@@ -299,6 +299,7 @@ def main():
     # Calculate Metrics
     total_spending = filtered_df['Amount'].sum()
     num_transactions = len(filtered_df)
+    avg_spending = total_spending / num_transactions if num_transactions > 0 else 0.0
     
     # Get top category
     if not filtered_df.empty:
@@ -310,7 +311,7 @@ def main():
         top_category_val = 0.0
         
     # Metric Columns
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     
     with col1:
         st.container(border=True).metric(
@@ -330,6 +331,13 @@ def main():
         st.container(border=True).metric(
             label="Total Transactions",
             value=f"{num_transactions:,}",
+            delta="Filtered range"
+        )
+        
+    with col4:
+        st.container(border=True).metric(
+            label="Average per Transaction",
+            value=f"${avg_spending:,.2f}",
             delta="Filtered range"
         )
         
