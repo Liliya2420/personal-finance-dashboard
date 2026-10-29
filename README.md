@@ -1,4 +1,18 @@
-Personal Finance Dashboard
+# 课程作业合集
+
+这个仓库用来存放我的课程作业，按作业分文件夹管理。每份作业都有自己的说明文档，写明用了什么工具、怎么复现、得出什么结论。
+
+<!-- 课程作业索引 -->
+
+| 编号 | 作业主题 | 所在位置 | 主要工具 |
+|---|---|---|---|
+| 作业一 | 个人财务看板 | 仓库根目录（`app.py` 等） | Python + Streamlit + Pandas |
+| 作业二 | 描述性统计分析 | [`stata-descriptive-stats/`](stata-descriptive-stats) | Stata 12 SE |
+
+---
+
+## 作业一 · 个人财务看板（Python + Streamlit）
+
 A web-based interactive Personal Finance Dashboard built using **Python**, **Pandas**, and **Streamlit** to help you track, analyze, and visualize your spending habits.
 ## 🌟 Features
 * **Automated Categorization**: Uses keyword heuristics to automatically categorize your transactions into `Groceries`, `Subscriptions`, `Transportation`, or `Other`.
@@ -22,7 +36,7 @@ Ensure you have Python installed (Python 3.8 or higher is recommended).
 ### 2. Clone/Open the Project Directory
 Navigate to the folder containing the project files:
 ```bash
-cd C:\Users\SUJATHA\.gemini\antigravity\scratch\personal_finance_dashboard
+cd 本仓库文件夹（即 app.py 所在的那一层）
 ```
 ### 3. Install Dependencies
 Install the required packages using pip:
